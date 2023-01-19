@@ -41,4 +41,34 @@ export const Container = styled.div`
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 8px;
   }
+
+  @media (max-width: 924px) {
+    .div-dog {
+      width: 519px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .div-dog {
+      width: 411px;
+      height: 378px;
+    }
+
+    .img-dog {
+      width: 349px;
+      height: 314px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .div-dog {
+      width: 291px;
+      height: 284px;
+    }
+
+    .img-dog {
+      width: 261px;
+      height: 245px;
+    }
+  }
 `;

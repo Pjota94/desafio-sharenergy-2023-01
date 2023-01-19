@@ -27,4 +27,15 @@ export const Container = styled.div`
     line-height: 20px;
     color: #142234;
   }
+
+  @media (max-width: 484px) {
+    width: 205px;
+    height: 39px;
+    margin-top: 50px;
+    margin-left: 66px;
+
+    input::placeholder {
+      font-size: 13px;
+    }
+  }
 `;

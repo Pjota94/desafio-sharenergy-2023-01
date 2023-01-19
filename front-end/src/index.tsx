@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { Toaster } from "react-hot-toast";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import UserContext from "./context/UserContext";
@@ -12,6 +13,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <UserContext>
+        <Toaster position="top-center" reverseOrder={true} />
         <App />
       </UserContext>
     </BrowserRouter>

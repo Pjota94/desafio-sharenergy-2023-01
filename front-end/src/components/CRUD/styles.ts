@@ -48,4 +48,23 @@ export const Container = styled.div`
   .div-btn {
     width: 782px;
   }
+
+  @media (max-width: 1064px) {
+    .box-cards {
+      width: 540px;
+    }
+
+    .div-btn {
+      width: 540px;
+    }
+  }
+
+  @media (max-width: 614px) {
+    .box-cards {
+      width: 312px;
+    }
+    .div-btn {
+      width: 312px;
+    }
+  }
 `;

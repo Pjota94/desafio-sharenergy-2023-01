@@ -81,4 +81,120 @@ export const Container = styled.div`
     font-size: 16px;
     line-height: 20px;
   }
+
+  @media (max-width: 980px) {
+    width: 535px;
+
+    .div-card-one {
+      width: 226px;
+    }
+
+    .div-card-second {
+      width: 178px;
+    }
+
+    img {
+      width: 55px;
+      height: 55px;
+    }
+
+    .text-name {
+      font-size: 13px;
+    }
+
+    .span-name {
+      font-size: 13px;
+    }
+
+    .text-email {
+      font-size: 13px;
+    }
+
+    .span-email {
+      font-size: 13px;
+    }
+
+    .text-username {
+      font-size: 13px;
+    }
+
+    .span-username {
+      font-size: 13px;
+    }
+
+    .text-age {
+      font-size: 13px;
+    }
+
+    .span-age {
+      font-size: 13px;
+    }
+  }
+
+  @media (max-width: 590px) {
+    width: 428px;
+
+    .div-card-one {
+      width: 181px;
+    }
+
+    .div-card-second {
+      width: 124px;
+    }
+
+    img {
+      width: 45px;
+      height: 45px;
+    }
+
+    .text-name {
+      font-size: 10px;
+    }
+
+    .span-name {
+      font-size: 10px;
+    }
+
+    .text-email {
+      font-size: 10px;
+    }
+
+    .span-email {
+      font-size: 10px;
+    }
+
+    .text-username {
+      font-size: 10px;
+    }
+
+    .span-username {
+      font-size: 10px;
+    }
+
+    .text-age {
+      font-size: 10px;
+    }
+
+    .span-age {
+      font-size: 10px;
+    }
+  }
+
+  @media (max-width: 484px) {
+    width: 232px;
+    height: 96px;
+    flex-direction: column;
+
+    .div-card-one {
+      width: 183px;
+    }
+
+    .div-card-second {
+      width: 176px;
+    }
+
+    img {
+      display: none;
+    }
+  }
 `;

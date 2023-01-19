@@ -28,11 +28,9 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin-top: 50px; */
   }
 
   .img-cat-face {
-    /* border: 5px solid #ec6e74; */
     width: 556px;
   }
 
@@ -40,6 +38,37 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-top: 50px; */
+  }
+
+  .img-cat-init {
+    width: 363px;
+  }
+
+  @media (max-width: 617px) {
+    .img-cat-face {
+      width: 385px;
+    }
+  }
+
+  @media (max-width: 510px) {
+    .img-cat-face {
+      width: 385px;
+    }
+
+    .img-cat-init {
+      width: 363px;
+    }
+  }
+
+  @media (max-width: 472px) {
+    .img-cat-face {
+      width: 275px;
+    }
+  }
+
+  @media (max-width: 510px) {
+    .img-cat-init {
+      width: 251px;
+    }
   }
 `;

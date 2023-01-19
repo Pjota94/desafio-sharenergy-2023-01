@@ -83,4 +83,22 @@ export const Container = styled.div`
     margin-left: 6px;
     margin-top: -13px;
   }
+
+  @media (max-width: 440px) {
+    .card {
+      width: 332px;
+    }
+
+    input {
+      width: 260px;
+    }
+
+    label {
+      margin-left: -198px;
+    }
+
+    span {
+      margin-left: -130px;
+    }
+  }
 `;

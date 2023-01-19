@@ -1,16 +1,34 @@
 import styled from "styled-components";
 
-export const Container = styled.nav`
-  width: 333px;
+export const Container = styled.div`
+  background: #8acbf4;
+  position: fixed;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 265px;
+  z-index: 1;
+  border-radius: 0px 10px 10px 0px;
 
-  .btns-nav {
+  > svg {
+    font-size: 40px;
+    color: #ec6e74;
+    margin-left: 7px;
+    margin-top: 13px;
+    cursor: pointer;
+  }
+
+  > svg:hover {
+    color: #f0464e;
+  }
+
+  .btns-sidebar {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 8px;
     margin-top: 37px;
   }
-
   .btn-user {
     width: 221px;
     height: 47px;
@@ -116,9 +134,5 @@ export const Container = styled.nav`
     font-weight: 400;
     font-size: 16px;
     width: 105px;
-  }
-
-  @media (max-width: 800px) {
-    display: none;
   }
 `;

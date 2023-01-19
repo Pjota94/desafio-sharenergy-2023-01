@@ -16,6 +16,24 @@ export interface ICardUSer {
   picture: any;
 }
 
+//CardCrud
+
+export interface ICardCrud {
+  name: string;
+  email: string;
+  telephone: string;
+  cpf?: string;
+  address: string;
+  _id: string;
+}
+
+//Login
+
+export interface ILogin {
+  username: string;
+  password: string;
+}
+
 //Context - UserContext
 
 export interface IProviderProps {
@@ -31,4 +49,13 @@ export interface IValuesProps {
   setPageDash: Dispatch<SetStateAction<string>>;
   inputName: string;
   setInputName: Dispatch<SetStateAction<string>>;
+  logout: () => void;
+  userCrud: ICardCrud[];
+  setUserCrud: Dispatch<SetStateAction<ICardCrud[]>>;
+  openModalCreate: () => void;
+  closeModalCreate: () => void;
+  openModalUpdate: () => void;
+  closeModalUpdate: () => void;
+  idCard: string;
+  setIdCard: Dispatch<SetStateAction<string>>;
 }

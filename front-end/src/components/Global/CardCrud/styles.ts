@@ -22,11 +22,13 @@ export const Container = styled.div`
   .div-card-one {
     display: flex;
     flex-direction: column;
+    width: 250px;
   }
 
   .div-card-second {
     display: flex;
     flex-direction: column;
+    width: 200px;
   }
 
   .text-name {
@@ -89,5 +91,127 @@ export const Container = styled.div`
 
   button:hover {
     color: #cf2d35;
+  }
+
+  @media (max-width: 1064px) {
+    width: 511px;
+
+    .text-name {
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+    .span-name {
+      font-weight: 200;
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+    .text-email {
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+    .span-email {
+      font-weight: 200;
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+    .text-username {
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+    .span-username {
+      font-weight: 200;
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+    .text-age {
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+    .span-age {
+      font-weight: 200;
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+    button {
+      font-size: 17px;
+      margin-right: 10px;
+    }
+
+    .div-card-one {
+      width: 209px;
+    }
+  }
+
+  @media (max-width: 614px) {
+    width: 280px;
+
+    .div-card-second {
+      width: 177px;
+    }
+
+    button {
+      font-size: 17px;
+      margin-right: 5px;
+      margin-top: 5px;
+    }
+    .text-name {
+      font-weight: 300;
+      font-size: 10px;
+      line-height: 20px;
+    }
+
+    .span-name {
+      font-weight: 200;
+      font-size: 10px;
+      line-height: 20px;
+    }
+
+    .text-email {
+      font-weight: 300;
+      font-size: 10px;
+      line-height: 20px;
+    }
+
+    .span-email {
+      font-weight: 200;
+      font-size: 10px;
+      line-height: 20px;
+    }
+
+    .text-username {
+      font-weight: 300;
+      font-size: 10px;
+      line-height: 20px;
+    }
+
+    .span-username {
+      font-weight: 200;
+      font-size: 10px;
+      line-height: 20px;
+    }
+
+    .text-age {
+      font-weight: 300;
+      font-size: 10px;
+      line-height: 20px;
+    }
+
+    .span-age {
+      font-weight: 200;
+      font-size: 10px;
+      line-height: 20px;
+    }
   }
 `;

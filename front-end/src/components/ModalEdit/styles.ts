@@ -121,4 +121,30 @@ export const Container = styled.div`
     margin-bottom: 8px;
     margin-left: -308px;
   }
+
+  @media (max-width: 430px) {
+    .div-card-create {
+      width: 327px;
+    }
+
+    input {
+      width: 271px;
+    }
+
+    .lb-name {
+      margin-left: -236px;
+    }
+    .lb-email {
+      margin-left: -238px;
+    }
+    .lb-tel {
+      margin-left: -222px;
+    }
+    .lb-address {
+      margin-left: -217px;
+    }
+    .lb-cpf {
+      margin-left: -252px;
+    }
+  }
 `;

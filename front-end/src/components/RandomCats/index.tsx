@@ -6,7 +6,7 @@ import { AuthContext } from "../../context/UserContext";
 import CatInit from "../../assets/catInit.png";
 
 const RandomCats = () => {
-  const { inputName } = useContext(AuthContext);
+  const { inputName, logout } = useContext(AuthContext);
   const [imgCat, setImgCat] = useState("https://http.cat/200");
 
   useEffect(() => {
@@ -17,13 +17,13 @@ const RandomCats = () => {
     <Container>
       <div className="div-search">
         <Input placeholder={"Status Code"} />
-        <button>
+        <button onClick={logout}>
           <FiLogOut />
         </button>
       </div>
       {inputName === "" ? (
         <div className="div-cat-init">
-          <img src={CatInit} alt="" />
+          <img className="img-cat-init" src={CatInit} alt="" />
         </div>
       ) : (
         <div className="div-cat">

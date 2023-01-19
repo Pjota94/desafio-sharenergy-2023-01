@@ -5,23 +5,23 @@ import CardUser from "../Global/CardUser";
 import { useContext, useEffect, useState } from "react";
 import { ICardUSer } from "../../interfaces";
 import { AuthContext } from "../../context/UserContext";
+import { MdNavigateNext } from "react-icons/md";
+import { MdNavigateBefore } from "react-icons/md";
 
 const RandomUsers = () => {
   const [usersList, setUsersList] = useState<ICardUSer[]>([]);
-  const [userFilter, setUserFilter] = useState<ICardUSer[]>([]);
   const [page, setPage] = useState(1);
-  const { inputName, setInputName } = useContext(AuthContext);
+
+  const { inputName, logout } = useContext(AuthContext);
 
   const changePage1 = () => {
-    setPage(1);
+    if (page >= 1) {
+      setPage(page - 1);
+    }
   };
 
   const changePage2 = () => {
-    setPage(2);
-  };
-
-  const changePage3 = () => {
-    setPage(3);
+    setPage(page + 1);
   };
 
   useEffect(() => {
@@ -29,25 +29,15 @@ const RandomUsers = () => {
       .then((response) => response.json())
       .then((response) => {
         setUsersList(response.results);
-        setUserFilter(response.results);
       })
       .catch((err) => console.log(err));
   }, [page]);
-
-  // const filtroNome = userFilter.filter(
-  //   (elem) =>
-  //     inputName.toLocaleLowerCase() === elem.name.first.toLocaleLowerCase().includes()
-  // );
-  // console.log(filtroNome);
-  // useEffect(() => {
-  //   setUserFilter(filtroNome);
-  // }, []);
 
   return (
     <Container>
       <div className="div-search-logout">
         <Input placeholder={"Search"} />
-        <button>
+        <button onClick={logout}>
           <FiLogOut />
         </button>
       </div>
@@ -68,9 +58,12 @@ const RandomUsers = () => {
           ))}
       </div>
       <div className="div-btn-pages">
-        <button onClick={changePage1}>1</button>
-        <button onClick={changePage2}>2</button>
-        <button onClick={changePage3}>3</button>
+        <button className="before" onClick={changePage1}>
+          <MdNavigateBefore />
+        </button>
+        <button className="next" onClick={changePage2}>
+          <MdNavigateNext />
+        </button>
       </div>
     </Container>
   );
