@@ -1,6 +1,8 @@
-# Intruções para execução
+<h1 align="center">
+ Intruções para execução
+</h1>
 
-## Passso a passo para rodar a aplicação.
+## Passo a passo para rodar a aplicação.
 
 ```bash
 # 1º Clone este repositório
@@ -27,7 +29,20 @@ $ yarn start
 $ y
 ```
 
-<p align="left">
-  <a href="https://www.linkedin.com/in/paulo-j%C3%BAnior-6673a5199/">
-    <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn Button">
-  </a>
+#### Só é possível entrar na aplicação com o usuário padrão.
+
+### Usuário padrão é:
+
+```
+username: desafiosharenergy
+password: sh@r3n3rgy
+```
+
+## 🛠 Tecnologias Utilizadas
+
+| Front-End         | Back-End |
+| ----------------- | -------- |
+| React             | Node.js  |
+| TypeScript        | Express  |
+| Styled-Components | MongoDB  |
+| ContextApi        | Mongoose |
