@@ -21,10 +21,10 @@ $ yarn install
 #Ex: mongodb+srv://<username>:<password>@cluster0.cwmempk.mongodb.net/?retryWrites=true&w=majority (Lembre-se de substituir o <password> pela sua senha de usuário do Mongo Atlas)
 $ yarn dev
 
-# 5º Abra um novo terminal e vá para a pasta front-end
+# 6º Abra um novo terminal e vá para a pasta front-end
 $ cd front-end
 
-# 6º Execute os comandos para instalar e iniciar a aplicação
+# 7º Execute os comandos para instalar e iniciar a aplicação
 $ yarn install
 $ yarn start
 
