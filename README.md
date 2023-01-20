@@ -1,5 +1,5 @@
 <h1 align="center">
- Intruções para execução
+ Instruções para execução
 </h1>
 
 ## Passo a passo para rodar a aplicação.
