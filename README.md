@@ -49,7 +49,7 @@ password: sh@r3n3rgy
 
 ## Link do Vídeo
 
-https://youtu.be/DauZPLB5isg
+https://youtu.be/NYC8E3POD1s
 
 
 ## Figma
