@@ -5,6 +5,7 @@ import { AuthContext } from "../../context/UserContext";
 import { useForm } from "react-hook-form";
 import { ICardCrud } from "../../interfaces";
 import api from "../../services/api";
+import { toast } from "react-hot-toast";
 
 const ModalCreate = () => {
   const { closeModalCreate, setUserCrud, userCrud } = useContext(AuthContext);
@@ -15,6 +16,7 @@ const ModalCreate = () => {
       const { data: newData } = await api.post("api/clients", data);
       setUserCrud([newData, ...userCrud]);
       closeModalCreate();
+      toast.success("Successfully created!");
     } catch (error) {
       console.log(error);
     }

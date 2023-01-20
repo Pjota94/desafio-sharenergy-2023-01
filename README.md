@@ -16,6 +16,9 @@ $ cd back-end
 
 # 4º Execute os comandos para instalar e rodar o servidor.
 $ yarn install
+
+# 5º Adicione a sua string de conexão do mongoDB Atlas no .env e logo após poderá iniciar o servidor.
+#Ex: mongodb+srv://<username>:<password>@cluster0.cwmempk.mongodb.net/?retryWrites=true&w=majority (Lembre-se de substituir o <password> pela sua senha de usuário do Mongo Atlas)
 $ yarn dev
 
 # 5º Abra um novo terminal e vá para a pasta front-end
