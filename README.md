@@ -1,5 +1,5 @@
 <h1 align="center">
- Intruções para execução
+ Instruções para execução
 </h1>
 
 ## Passo a passo para rodar a aplicação.
@@ -52,12 +52,10 @@ password: sh@r3n3rgy
 
 ## Link do Vídeo
 
-```
-https://youtu.be/DauZPLB5isg
-```
+https://youtu.be/NYC8E3POD1s
+
 
 ## Figma
 
-```
 https://www.figma.com/file/o1xy5CAJoPUdJ0kNUcI7Ni/Untitled?node-id=9%3A175&t=L06t6ma84DQ2zNpg-1
-```
+
