@@ -31,7 +31,6 @@ const UserContext = ({ children }: IProviderProps) => {
 
   const logout = () => {
     navigate("/", { replace: true });
-    toast.success("Successfully logged out!");
   };
 
   const openModalCreate = () => {

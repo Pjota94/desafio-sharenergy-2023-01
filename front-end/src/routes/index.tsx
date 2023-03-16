@@ -1,12 +1,12 @@
 import { Route, Routes } from "react-router-dom";
 import Dashboard from "../pages/Dashboard";
-import Login from "../pages/Login";
+import Initial from "../pages/Initial";
 
 const RoutesMain = () => {
   return (
     <Routes>
-      <Route path="/" element={<Login />} />
-      <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/home" element={<Dashboard />} />
+      <Route path="/" element={<Initial />} />
     </Routes>
   );
 };

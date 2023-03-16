@@ -22,10 +22,6 @@ const Navigation = () => {
     setPageDash("RandomDog");
   };
 
-  const btnCrud = () => {
-    setPageDash("Crud");
-  };
-
   return (
     <Container>
       <Logo />
@@ -41,10 +37,6 @@ const Navigation = () => {
         <button className="btn-dog" onClick={btnRandomDog}>
           <FaDog />
           <p className="text-btn-dog">Random Dog</p>
-        </button>
-        <button className="btn-crud" onClick={btnCrud}>
-          <IoIosCreate />
-          <p className="text-btn-crud">CRUD</p>
         </button>
       </div>
     </Container>

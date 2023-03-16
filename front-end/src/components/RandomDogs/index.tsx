@@ -1,8 +1,10 @@
 import { Container } from "./styles";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { apiDogs } from "../../services/api";
+import { AuthContext } from "../../context/UserContext";
 
 const RandomDogs = () => {
+  const { logout } = useContext(AuthContext);
   const [imgDog, setImgDog] = useState(
     "https://random.dog/18852d7b-2501-4edb-ad21-fe46c12cf65b.jpeg"
   );
